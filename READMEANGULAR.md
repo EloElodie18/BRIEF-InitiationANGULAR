@@ -3,9 +3,10 @@
 
  
 # PARTIE 1 --- INITIATION ---  
-<div style='text-align: justify;'> 
+<p align="justify"> 
 Angular organise un projet; ce projet est alors composé de composants; en créant un projet avec Angular c'est se créer un projet organisé avec des outils disponibles grâce à Angular. Lors de cette création, des pages types et des composants sont créés; moi, je suis le chef d'orchestre qui rendra tout ces composants, qui ne sont pas rattachés et qui ne mènent à rien, à un ensemble qui fonctionnne en symbiose via des échanges divers et variés que je devrais créer en fonction de mes besoins. Tout est modulable. Je peux ajouter autant de composant que nécessaire.  
-</div>
+</p>  
+
 
 1 PROJET =   
 
