@@ -18,11 +18,11 @@ Angular organise un projet; ce projet est alors composé de composants; en créa
         - 1 html(trame supplémentaire, enfant) +   
         - 1 ts (gestion class, recuperation en import/export)+  
         - 1 css  
-
+<p align="justify">
     Ils sont des enveloppes qui contiennent des methodes internes déclencheuses d'évenements. On parle de logique de composant.  
-     Les mots clés à mettre dans les composants sont dans le RTFM. 
-     Un composant peut se trouver dans un autre composant, c'est alors son enfant, donc cet enfant à son propre dossier aussi mais dans l'arborescence est-ce qu'il apparait physiquement dans son composant mère?
-
+    Les mots clés à mettre dans les composants sont dans le RTFM. 
+    Un composant peut se trouver dans un autre composant, c'est alors son enfant, donc cet enfant à son propre dossier aussi mais dans l'arborescence est-ce qu'il apparait physiquement dans son composant mère?
+</p>
     ET  
 
     - 1 RACINE ANGULAR qui pilote tous les imports et qui s'exporte pour que ce soit utilisé dans d'autres composants.
@@ -70,7 +70,8 @@ Dans Angular, il y a un module intégré nommé HttpClient; c'est un moyen de r�
 
 HttpClientModule enregistre les fournisseurs dont l'appli à besoin pour utiliser le HttpClient. Ces fournisseurs sont ajoutés qd je note dans mon @NgModule de la racine app.module "HttpClientModule".
 Le Html doit ensuite être MAJ avec un canal "async". Ce dernier renvoie la dernière valeur d'un flux de donné et continue de le faire tant que le composant est en vie. J'ai été lire le manuel, mais c'est vraiment abstrait pour moi.  
-</p>
+</p>  
+
 ### J'Y COMPREND QUOI, J'Y COMPREND RIEN  
 
 Mes doutes et mes interrogations sont sur l'emplacement et la manière dont je dois gerer tout ces mouvements et ces appels d'élements.
