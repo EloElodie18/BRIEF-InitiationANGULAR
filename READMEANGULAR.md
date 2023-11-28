@@ -2,7 +2,7 @@
   
 
  
-### PARTIE 1 --- INITIATION ---  
+# PARTIE 1 --- INITIATION ---  
 
 Angular organise un projet; ce projet est alors composé de composants; en créant un projet avec Angular c'est se créer un projet organisé avec des outils disponibles grâce à Angular. Lors de cette création, des pages types et des composants sont créés; moi, je suis le chef d'orchestre qui rendra tout ces composants, qui ne sont pas rattachés et qui ne mènent à rien, à un ensemble qui fonctionnne en symbiose via des échanges divers et variés que je devrais créer en fonction de mes besoins. Tout est modulable. Je peux ajouter autant de composant que nécessaire.  
 
@@ -12,8 +12,12 @@ Angular organise un projet; ce projet est alors composé de composants; en créa
   
     ET
 
-    - DES COMPOSANTS contenants chacun 1 html(trame supplémentaire, enfant) + 1 ts (gestion class, recuperation en import/export)+ 1 css  
-    Ils sont des enveloppes qui contiennent des methodes internes déclencheuses d'évenements. On parle de logique de composant. Les mots clés à mettre dans les composants sont dans le RTFM. Un composant peut se trouver dans un autre composant, c'est alors son enfant, donc cet enfant à son propre dossier aussi mais dans l'arborescence est-ce qu'il apparait physiquement dans son composant mère?
+    - DES COMPOSANTS contenants chacun:  
+        - 1 html(trame supplémentaire, enfant) +   
+        - 1 ts (gestion class, recuperation en import/export)+  
+        - 1 css  
+    Ils sont des enveloppes qui contiennent des methodes internes déclencheuses d'évenements. On parle de logique de composant.  
+     Les mots clés à mettre dans les composants sont dans le RTFM. Un composant peut se trouver dans un autre composant, c'est alors son enfant, donc cet enfant à son propre dossier aussi mais dans l'arborescence est-ce qu'il apparait physiquement dans son composant mère?
 
     ET  
 
@@ -25,12 +29,12 @@ D'une manière gnrl, quelles sont les conséquences de la création d'un composa
 
 ![Alt text](image.png)
 
-# J'Y COMPREND QUOI, J'Y COMPREND RIEN  
+### J'Y COMPREND QUOI, J'Y COMPREND RIEN  
 
 A ce stade, je comprends qu'Angular organise, et visuellement c'est très clair; en revanche, sur le fond, si je ne suis pas à l'origine des import/export, ou si ce n'est pas commenté, je ne fais pas le lien ni comprends les interactions crées, ou les conséquences de certains changements.
 
 
-### PARTIE 2 --- ROUTING ---  
+# PARTIE 2 --- ROUTING ---  
 
 Le routing c'est reprendre qqch qui mène à rien afin qu'il mène qqpart. 
 Le routeur permet d'afficher les composants concernés par l'URL choisit, cad si la route est créée on peut aller à l'endroit visé. 
@@ -44,12 +48,12 @@ ActivetedRoute est un attribut dans une classe; les methodes qui sont ds cette c
 Des canalisations sont nécessaires afin de transformer des données dans mon HTML ([routerLink]?).
 Concretement, tout ça génère une nouvelle page url (l'url à proprement parlé est modifié), quand on clic sur qqch. 
 
-# J'Y COMPREND QUOI, J'Y COMPREND RIEN  
+### J'Y COMPREND QUOI, J'Y COMPREND RIEN  
 
 Ce n'est pas clair pour moi. Mon schéma me permet de mieux comprendre, s'il est bon. J'ai besoin d'exemple simple et concret. 
 
 
-### PARTIE 3 --- DATA ---  
+# PARTIE 3 --- DATA ---  
 
 Qu'est ce que je dois entendre par data? 
 Dans le module "data", je remarque que pour la création de la "cart" on a demandé à Angular la generation d'un "service" puis d'un composant "cart". Je n'ai pas constaté ou retenu comment ça a produit ce que je vois dans l'arborescence; Je vois, qu'au même titre qu'un composant classique, un dossier cart "different"(car vert avec logo) apparait contenant les mêmes fichiers qu'un composant classique; je suppose que c'est la generation "service" qui donne le petit panier à ce "composant?". Mes questions sont: pour un composant de type "panier" est-ce grâce à cette manière de la génerer que l'on peut ensuite l'utiliser en tant que tel, cad pour stocker des produits, et pour pouvoir y adjoindre une éventuelle expédition?
@@ -63,12 +67,12 @@ Dans Angular, il y a un module intégré nommé HttpClient; c'est un moyen de r�
 HttpClientModule enregistre les fournisseurs dont l'appli à besoin pour utiliser le HttpClient. Ces fournisseurs sont ajoutés qd je note dans mon @NgModule de la racine app.module "HttpClientModule".
 Le Html doit ensuite être MAJ avec un canal "async". Ce dernier renvoie la dernière valeur d'un flux de donné et continue de le faire tant que le composant est en vie. J'ai été lire le manuel, mais c'est vraiment abstrait pour moi.  
 
-# J'Y COMPREND QUOI, J'Y COMPREND RIEN  
+### J'Y COMPREND QUOI, J'Y COMPREND RIEN  
 
 Mes doutes et mes interrogations sont sur l'emplacement et la manière dont je dois gerer tout ces mouvements et ces appels d'élements.
 
 
-### PARTIE 4  --- FORMULAIRE ---  
+# PARTIE 4  --- FORMULAIRE ---  
 
 
 Un formulaire, c'est quoi? Le formulaire est un support informatique permettant de collecter des informations diverses et variées.
@@ -78,4 +82,4 @@ Une seconde methode est nécessaire afin de vider le panier et réinitialiser le
 
 
 
- # ATTENTES: UN SCHEMA GNRL DES INTERACTIONS
+ ### ATTENTES: UN SCHEMA GNRL DES INTERACTIONS
