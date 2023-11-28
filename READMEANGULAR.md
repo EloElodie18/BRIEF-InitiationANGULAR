@@ -1,4 +1,5 @@
-//DECOUVERTE DU FRAMEWORK ANGULAR// remarques, explications, etonnements  
+//DECOUVERTE DU FRAMEWORK ANGULAR// remarques, explications, étonnements  
+  
 
  
 ### PARTIE 1 --- INITIATION ---  
