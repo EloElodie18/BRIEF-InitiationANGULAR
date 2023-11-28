@@ -3,8 +3,9 @@
 
  
 # PARTIE 1 --- INITIATION ---  
-
+<div style='text-align: justify;'> 
 Angular organise un projet; ce projet est alors composé de composants; en créant un projet avec Angular c'est se créer un projet organisé avec des outils disponibles grâce à Angular. Lors de cette création, des pages types et des composants sont créés; moi, je suis le chef d'orchestre qui rendra tout ces composants, qui ne sont pas rattachés et qui ne mènent à rien, à un ensemble qui fonctionnne en symbiose via des échanges divers et variés que je devrais créer en fonction de mes besoins. Tout est modulable. Je peux ajouter autant de composant que nécessaire.  
+</div>
 
 1 PROJET =   
 
@@ -16,8 +17,10 @@ Angular organise un projet; ce projet est alors composé de composants; en créa
         - 1 html(trame supplémentaire, enfant) +   
         - 1 ts (gestion class, recuperation en import/export)+  
         - 1 css  
+
     Ils sont des enveloppes qui contiennent des methodes internes déclencheuses d'évenements. On parle de logique de composant.  
-     Les mots clés à mettre dans les composants sont dans le RTFM. Un composant peut se trouver dans un autre composant, c'est alors son enfant, donc cet enfant à son propre dossier aussi mais dans l'arborescence est-ce qu'il apparait physiquement dans son composant mère?
+     Les mots clés à mettre dans les composants sont dans le RTFM. 
+     Un composant peut se trouver dans un autre composant, c'est alors son enfant, donc cet enfant à son propre dossier aussi mais dans l'arborescence est-ce qu'il apparait physiquement dans son composant mère?
 
     ET  
 
@@ -82,4 +85,4 @@ Une seconde methode est nécessaire afin de vider le panier et réinitialiser le
 
 
 
- ### ATTENTES: UN SCHEMA GNRL DES INTERACTIONS
+ ### ATTENTE: UN SCHEMA GNRL DES INTERACTIONS
