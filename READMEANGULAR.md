@@ -23,8 +23,9 @@ Angular organise un projet; ce projet est alors composé de composants; en créa
         - 1 css  
 
     Ils sont des enveloppes qui contiennent des methodes internes déclencheuses d'évenements (des liaisons).   
-    On parle de logique de composant. Au vu de leurs fonctions, on peut penser à une classe, et effectivement l'utilité est comparable mais le composant permet de contourner la complexité de gestion des classes (dépendance parent/enfant),   
-    la facilité d'accès au composant et son contenu et permet une liaison moins complexe, plus propre et plus light.  
+    On parle de logique de composant. Au vu de leurs fonctions, on peut penser à une classe.   
+    Effectivement l'utilité est comparable mais le composant permet de contourner la complexité de gestion des classes (dépendance parent/enfant), la facilité d'accès au composant et son contenu et permet une liaison moins complexe,   
+    plus propre et plus light.  
     Les mots clés à mettre dans les composants sont dans le RTFM. 
     Un composant peut se trouver dans un autre composant, c'est alors son enfant, donc cet enfant à son propre dossier;   
     à noter: nous ne pouvons voir visuellement ce lien dans l'arborescence.
