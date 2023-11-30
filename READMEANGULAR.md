@@ -22,9 +22,12 @@ Angular organise un projet; ce projet est alors composé de composants; en créa
         - 1 ts (gestion class, recuperation en import/export) +  
         - 1 css  
 
-    Ils sont des enveloppes qui contiennent des methodes internes déclencheuses d'évenements (des liaisons). On parle de logique de composant. Au vu de leurs fonctions, on peut penser à une classe, et effectivement l'utilité est comparable mais le composant permet de contourner la complexité de gestion des classes (dépendance parent/enfant), la facilité d'accès au composant et son contenu et permet une liaison moins complexe, plus propre et plus light.  
+    Ils sont des enveloppes qui contiennent des methodes internes déclencheuses d'évenements (des liaisons).   
+    On parle de logique de composant. Au vu de leurs fonctions, on peut penser à une classe, et effectivement l'utilité est comparable mais le composant permet de contourner la complexité de gestion des classes (dépendance parent/enfant),   
+    la facilité d'accès au composant et son contenu et permet une liaison moins complexe, plus propre et plus light.  
     Les mots clés à mettre dans les composants sont dans le RTFM. 
-    Un composant peut se trouver dans un autre composant, c'est alors son enfant, donc cet enfant à son propre dossier; à noter: nous ne pouvons voir visuellement ce lien dans l'arborescence.
+    Un composant peut se trouver dans un autre composant, c'est alors son enfant, donc cet enfant à son propre dossier;   
+    à noter: nous ne pouvons voir visuellement ce lien dans l'arborescence.
 
     ET  
 
@@ -54,15 +57,17 @@ Un RouteurModule est créé dans l'import du @NgModule dans le module racine: l'
 Ce routeur est fixe mais on peut y ajouter des elements au fur et à mesure. Toujours avec un "path". On peut aussi y ajouter un id pour aller vers le lien précis recherché. Utilité?
 Le routeur nécessite l'activation de la route via ActivatedRoute qui est specifique à chq composant; ce dernier contient des infos sur l'itinéraire et les paramètres de l'itinéraire; en injectant ça, on configure le composant pour utiliser les services, c'est la gestion des données dans cet ActivatedRoute qui gère ces services; les services sont les plans de route et la configuration.   
 ActivetedRoute est un attribut dans une classe; les methodes qui sont dans cette classe permettent de faire le nécessaire pour faire le routing des endroits visés.  
-
-APARTE 1: D'autres types de routeur permettent de simplifier cette action, comme REDUX; cad lorsque l'on a besoin de qqch qui se trouve dans un enfant, il evite de passer par la mère pour l'avoir, l'accès est plus simplifié. D'autres framework, comme REACT simplifie dans son fonctionnement les échanges et les liaisons diverses.
-
-APARTE 2: sur ce projet là, quand on va dans le panier, on remarque que l'url change; on pourrait croire que l'on ouvre une nouvelle page, mais en réalité, même si l'url change, il ne change pas, il évolut, s'ajoute le nom de ce vers quoi nous allons; ça n'ouvre pas une nouvelle page, ça affiche d'autres informations de cette même page; de plus, ce mode de fonctionnement n'est pas sécurisé; en effet, dans ce mode de fonctionnement, où on fait apparaître le nom de l'endroit où l'on se trouve laisse une breche ouverte, donnant accès à beaucoup d'informations, parfois confidentielles d'un site. En fonction du type de stockage, des données, par exemple concernant l'utilisateur, pourraient être accessibles.
 </p>  
 
 ![Alt text](image-1.png)
 
-Des canalisations sont nécessaires afin de transformer des données dans mon HTML ([routerLink]?).
+Des canalisations sont nécessaires afin de transformer des données dans mon HTML ([routerLink]?).  
+
+<p align="justify">
+APARTE 1: D'autres types de routeur permettent de simplifier cette action, comme REDUX; cad lorsque l'on a besoin de qqch qui se trouve dans un enfant, il evite de passer par la mère pour l'avoir, l'accès est plus simplifié. D'autres framework, comme REACT simplifie dans son fonctionnement les échanges et les liaisons diverses.
+
+APARTE 2: sur ce projet là, quand on va dans le panier, on remarque que l'url change; on pourrait croire que l'on ouvre une nouvelle page, mais en réalité, même si l'url change, il ne change pas, il évolut, s'ajoute le nom de ce vers quoi nous allons; ça n'ouvre pas une nouvelle page, ça affiche d'autres informations de cette même page; de plus, ce mode de fonctionnement n'est pas sécurisé; en effet, dans ce mode de fonctionnement, où on fait apparaître le nom de l'endroit où l'on se trouve laisse une breche ouverte, donnant accès à beaucoup d'informations, parfois confidentielles d'un site. En fonction du type de stockage, des données, par exemple concernant l'utilisateur, pourraient être accessibles.  
+</p>
 
 
 ### J'Y COMPREND QUOI, J'Y COMPREND RIEN  
