@@ -21,18 +21,17 @@ Angular organise un projet; ce projet est alors composé de composants; en créa
         - 1 html(trame supplémentaire, enfant) +   
         - 1 ts (gestion class, recuperation en import/export) +  
         - 1 css  
-
-    Ils sont des enveloppes qui contiennent des methodes internes déclencheuses d'évenements (des liaisons).   
-    On parle de logique de composant. Au vu de leurs fonctions, on peut penser à une classe.   
-    Effectivement l'utilité est comparable mais le composant permet de contourner la complexité de gestion des classes (dépendance parent/enfant), la facilité d'accès au composant et son contenu et permet une liaison moins complexe,   
-    plus propre et plus light.  
+<p align="justify">
+    A NOTER: ces sont des enveloppes qui contiennent des methodes internes déclencheuses d'évenements (des liaisons). On parle de logique de composant. Au vu de leurs fonctions, on peut penser à une classe. Effectivement l'utilité est comparable mais le composant permet de contourner la complexité de gestion des classes (dépendance parent/enfant), la facilité d'accès au composant et son contenu et permet une liaison moins complexe, plus propre et plus light.  
     Les mots clés à mettre dans les composants sont dans le RTFM. 
     Un composant peut se trouver dans un autre composant, c'est alors son enfant, donc cet enfant à son propre dossier;   
     à noter: nous ne pouvons voir visuellement ce lien dans l'arborescence.
+</p>  
 
     ET  
-
-    - 1 RACINE ANGULAR qui pilote tous les imports et qui s'exporte pour que ce soit utilisé dans d'autres composants.  
+    
+    - 1 RACINE ANGULAR qui pilote tous les imports et qui s'exporte pour que ce soit utilisé dans d'autres composants.   
+    
 </p>
 <p align="justify">
 Dans chaque TS de chaque composant, il y a un @Component de type décorateur qui se crée automatiquement dès la création d'un nouveau composant; il fait le lien vers les fichiers, ceux du composant où se trouve le decorateur. Dans ce decorateur il y a toujours:   
@@ -66,7 +65,8 @@ Des canalisations sont nécessaires afin de transformer des données dans mon HT
 
 <p align="justify">
 APARTE 1: D'autres types de routeur permettent de simplifier cette action, comme REDUX; cad lorsque l'on a besoin de qqch qui se trouve dans un enfant, il evite de passer par la mère pour l'avoir, l'accès est plus simplifié. D'autres framework, comme REACT simplifie dans son fonctionnement les échanges et les liaisons diverses.
-
+</p>
+<p align="justify">
 APARTE 2: sur ce projet là, quand on va dans le panier, on remarque que l'url change; on pourrait croire que l'on ouvre une nouvelle page, mais en réalité, même si l'url change, il ne change pas, il évolut, s'ajoute le nom de ce vers quoi nous allons; ça n'ouvre pas une nouvelle page, ça affiche d'autres informations de cette même page; de plus, ce mode de fonctionnement n'est pas sécurisé; en effet, dans ce mode de fonctionnement, où on fait apparaître le nom de l'endroit où l'on se trouve laisse une breche ouverte, donnant accès à beaucoup d'informations, parfois confidentielles d'un site. En fonction du type de stockage, des données, par exemple concernant l'utilisateur, pourraient être accessibles.  
 </p>
 
